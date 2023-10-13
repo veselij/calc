@@ -70,7 +70,7 @@ function Calc({ numberOfRounds, gameNumber, startGameHandler }: Props) {
     history: new Array<Equation>(),
   });
   const a = Math.round(Math.random() * 100);
-  const b = Math.round(Math.random() * 100);
+  const b = Math.round(Math.random() * 10);
   const randomOperation = randomEnumKey(Operations);
   const op = Operations[randomOperation as keyof typeof Operations];
   const operation = make_operation(op);
